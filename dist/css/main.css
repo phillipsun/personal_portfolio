@@ -145,7 +145,8 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 60px);
+  overflow: hidden; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -153,10 +154,8 @@ main {
       main .icons a:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
+  main h1 {
+    margin-top: 20vh; }
 
 .about-info {
   display: grid;
@@ -164,7 +163,7 @@ main {
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
-    width: 250px;
+    width: 100%;
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
@@ -197,10 +196,6 @@ main {
   background: #2b2b2b;
   color: #fff;
   height: 60px; }
-
-@media screen and (min-width: 769px) and (max-width: 1240px) {
-  main {
-    padding: 4rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -238,5 +233,5 @@ main {
 @media screen and (max-width: 568px) {
   main {
     padding: 2rem; }
-    main#home h1 {
+    main h1 {
       margin-top: 10vh; } }
