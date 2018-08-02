@@ -174,8 +174,16 @@ main {
     font-size: 1rem; }
   .about-info .job {
     background: #515151;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border-bottom: #eece1a 5px solid; }
+    .about-info .job > h5,
+    .about-info .job h6 {
+      font-size: .8rem;
+      margin: 0.5rem 0; }
+    .about-info .job ul {
+      text-align: left;
+      padding-left: 0.8rem;
+      margin: 0; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
