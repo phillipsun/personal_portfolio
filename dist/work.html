@@ -1,128 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>View My Work</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <title>View My Work</title>
-</head>
-
-<body>
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+  <body class="work-page">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item current">
-          <a href="work.html" class="nav-link">
-            My Work
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            How To Reach Me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="menu">
+        <div class="menu-branding"><div class="portrait"></div></div>
+        <ul class="menu-nav">
+          <li class="nav-item"><a href="/" class="nav-link"> Home </a></li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> About Me </a>
+          </li>
+          <li class="nav-item current">
+            <a href="work.html" class="nav-link"> My Work </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> How To Reach Me </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main id="work">
-    <h1 class="lg-heading">
-      My
-      <span class="text-secondary">Work</span>
-    </h1>
-    <h2 class="sm-heading">
-      Check out some of my projects...
-    </h2>
-    <div class="projects">
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project1.jpg" alt="Houser image">
-        </a>
-        <a href="#!" class="btn-light">
-          <i class="fas fa-eye"></i> Houser - Property Management Application
-        </a>
-        <a href="https://github.com/phillipsun/Houser" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
+    <main id="work">
+      <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+      <h2>Check out some of my projects...</h2>
+      <div class="intro-blurb">
+        <p>
+          These are websites where I built the homepage from scratch using
+          custom markup and dynamic data using the following technologies: C#
+          Razor, HTML5, CSS, Flexbox, Grid, LESS, Javascript, and jQuery
+        </p>
+        <p>
+          I also used popular frameworks such as Bootstrap and best practices
+          such as BEM methodology.
+        </p>
+        <p>
+          Please note: I did not <strong><em>DESIGN</em></strong> these
+          websites. These were designed by our in-house design team. I built the
+          website based off of a designer's comp.
+        </p>
       </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project2.jpg" alt="DevWeather image">
+      <div class="websites">
+        <a href="https://dentalworks.com/" target="_blank">
+          <div class="website__text"><h3>DentalWorks Portal Website</h3></div>
+          <div class="website__image">
+            <img src="img/projects/website1.png" alt="" />
+          </div>
         </a>
-        <a href="#!" class="btn-light">
-          <i class="fas fa-eye"></i> DevWeather - 5-Day Weather Forecast Application
-        </a>
-        <a href="https://github.com/phillipsun/devweather" class="btn-dark">
-          <i class="fab fa-github"></i> Github
+        <a href="https://siouxfalls.vancethompsonvision.com/" target="_blank">
+          <div class="website__text">
+            <h3>Vance Thompson Vision - Sioux Falls - Website</h3>
+          </div>
+          <div class="website__image">
+            <img src="img/projects/website2.png" alt="" />
+          </div>
         </a>
       </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project3.jpg" alt="Project 3">
+      <hr />
+      <div class="intro-blurb">
+        <p>
+          These are projects that I built using React, Node, Express, Postgres
+          bootstrapped with the Create React App CLI.
+        </p>
+      </div>
+      <div class="react-development">
+        <a target="_blank" href="https://github.com/phillipsun/Houser">
+          <h3>Houser - Property Management Application</h3>
+          <img src="img/projects/project1.jpg" alt="Houser image" />
         </a>
-        <a href="#!" class="btn-light">
-          <i class="fas fa-eye"></i> Project
+        <a target="_blank" href="https://github.com/phillipsun/devweather">
+          <h3>DevWeather - 5-Day Weather Forecast Application</h3>
+          <img src="img/projects/project2.jpg" alt="DevWeather image" />
         </a>
-        <a href="#!" class="btn-dark">
-          <i class="fab fa-github"></i> Github
+        <a target="_blank" href="https://github.com/phillipsun/autolistr">
+          <h3>AutoListr - Car-selling application similar to CraigsList</h3>
+          <img
+            src="img/projects/project3.png"
+            alt="AutoListr application image"
+          />
         </a>
       </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project4.jpg" alt="Project 4">
-        </a>
-        <a href="#!" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#!" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project5.png" alt="Project 5">
-        </a>
-        <a href="#!" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#!" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-    </div>
-  </main>
-
-
-
-  <footer id="main-footer">
-    Sunspeed Creative | Copyright &copy; 2018
-  </footer>
-
-
-  <script src="js/main.js"></script>
-
-</body>
-
+    </main>
+    <footer id="main-footer">Sunspeed Creative | Copyright &copy; 2018</footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
