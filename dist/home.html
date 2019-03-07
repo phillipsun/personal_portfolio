@@ -109,13 +109,7 @@
               alt="Vance Thompson Vision Website Image"
             />
           </div>
-          <div class="portfolio__item">
-            <img
-              src="/dist/img/portfolio_9.jpg"
-              class="portfolio__item-image"
-              alt="Scott E. Kasden, M.D. Website Image"
-            />
-          </div>
+          <div class="portfolio__item portfolio__contact-item"></div>
         </div>
       </div>
 
@@ -126,7 +120,9 @@
       </div>
 
       <div class="contact">
-        <h2 class="contact__headline">Let's build awesome things together.</h2>
+        <h2 class="contact__headline">
+          Let's build something awesome together.
+        </h2>
         <form class="contact__form" action="" data-netlify="true">
           <div class="form-group">
             <label class="contact__label contact__label--name" for="name"
@@ -169,17 +165,23 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/new.js"></script>
     <script>
-      ScrollReveal().reveal(".about__intro", {
-        easing: "ease-in-out",
-        origin: "left",
-        distance: "300px"
-      });
-      ScrollReveal().reveal(".about__image", {
-        easing: "ease-in-out",
-        delay: 300,
-        origin: "right",
-        distance: "300px"
-      });
+      (function() {
+        ScrollReveal().reveal(".about__intro", {
+          easing: "ease-in-out",
+          origin: "left",
+          distance: "500px"
+        });
+        ScrollReveal().reveal(".about__image", {
+          easing: "ease-in-out",
+          delay: 300,
+          origin: "right",
+          distance: "500px"
+        });
+        ScrollReveal().reveal(".portfolio__item", {
+          interval: 32,
+          reset: true
+        });
+      })();
     </script>
   </body>
 </html>

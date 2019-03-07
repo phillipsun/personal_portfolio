@@ -173,7 +173,7 @@ body {
       background: url("/dist/img/portrait_small.jpg") center center no-repeat; }
     .portfolio__item::after {
       background: #000;
-      opacity: 0.8;
+      opacity: 0.9;
       content: "";
       position: absolute;
       height: 100%;
@@ -184,14 +184,42 @@ body {
       bottom: 0;
       transition: all 0.3s; }
     .portfolio__item:nth-of-type(1)::before {
-      background: url(/dist/img/portfolio_1-logo.svg) center center/150px no-repeat; }
+      background: url(/dist/img/portfolio_1-logo.svg) center center/200px no-repeat; }
     .portfolio__item:nth-of-type(2)::before {
       background: url(/dist/img/portfolio_2-logo.svg) center center/200px no-repeat; }
     .portfolio__item:nth-of-type(3)::before {
       background: url(/dist/img/portfolio_3-logo.png) center center/200px no-repeat; }
+    .portfolio__item:nth-of-type(4)::before {
+      background: url(/dist/img/portfolio_4-logo.png) center center/200px no-repeat;
+      filter: brightness(0) invert(1); }
+    .portfolio__item:nth-of-type(5)::before {
+      background: url(/dist/img/portfolio_5-logo.svg) center center/200px no-repeat; }
+    .portfolio__item:nth-of-type(6)::before {
+      background: url(/dist/img/portfolio_6-logo.svg) center center/200px no-repeat; }
+    .portfolio__item:nth-of-type(7)::before {
+      background: url(/dist/img/portfolio_7-logo.svg) center center/200px no-repeat; }
+    .portfolio__item:nth-of-type(8)::before {
+      background: url(/dist/img/portfolio_8-logo.svg) center center/200px no-repeat; }
+    .portfolio__item:nth-of-type(9)::before {
+      background-image: none; }
     .portfolio__item:hover::before {
       opacity: 0; }
     .portfolio__item:hover::after {
       opacity: 0.2; }
   .portfolio__item-image {
     max-width: 100%; }
+  .portfolio__contact-item::before {
+    content: "Work with me!";
+    z-index: 4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center; }
+  .portfolio__contact-item:hover::before {
+    opacity: 1; }
+  .portfolio__contact-item:hover::after {
+    opacity: 0.65; }
